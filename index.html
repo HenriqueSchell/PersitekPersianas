@@ -3,9 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <title>Persitek Persianas</title>
 </head>
 <body>
     
+    <!--Header-->
+        <header class="header">
+            <div class="overlay"></div>
+
+            <nav class="navbar fadein">
+                <img class="nav_logo" src="assets/logo-header.png" alt="Logo Persitek">
+                <ul class="nav_list">
+                    <li class="item"><a href="#">Início</a></li>
+                    <li class="item"><a href="#">Mostruário</a></li>
+                    <li class="item"><a href="#">Serviços</a></li>
+                    <li class="item"><a href="#">Sobre</a></li>
+                    <li class="item"><a href="#">Contato</a></li>
+                </ul>
+                <button class="nav_btn">Solicite seu orçamento</button>
+            </nav>
+
+            <section class="hero fadein">
+                <div class="hero_texts">
+                    <h1 class="hero_title">Temos a solução para deixar seu ambiente mais bonito e aconchegante!</h1>
+                    <p class="hero_p">Persitek persianas - Elevando sua privacidade com requinte!</p>
+                </div>
+
+                <div class="hero_buttons">
+                    <button class="hero_btn_orcamento">Solicite seu orçamento gratuito</button>
+                    <button class="hero_btn_mostruario">Ver Mostruário</button>
+                </div>
+            </section>
+
+       
+        </header>
+
+        <!--Corpo  principal-->
+
+        <main id="container fadein">
+            
+            <!-- Mostruário -->
+            <section class="mostruario">
+                <div class="mostruario_title"><h1>Nosso Mostruário</h1></div>
+
+                <!--Cards-->
+                <div class="cards">
+                    <!--Card 1-->
+                    <div class="card card1">
+                        <img class="card_img" src="assets/romana-card.jpg" alt="Foto de cortina romana">
+                        <div class="card_texts">
+                            <h1 class="card_title">Cortina Romana</h1>
+                            <p class="card_text">Dobras suaves que transformam qualquer ambiente em um espaço sofisticado e acolhedor.</p>
+                        </div>
+                    </div>
+
+                    <!--Card 2-->
+                    <div class="card card2">
+                        <img class="card_img" src="assets/rolo-card.jpg" alt="Foto de cortina romana">
+                        <div class="card_texts">
+                            <h1 class="card_title">Cortina Rolô</h1>
+                            <p class="card_text">Design minimalista com acabamento impecável. Praticidade e elegância em uma única peça.</p>
+                        </div>
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="card card3">
+                        <img class="card_img" src="assets/voil-card.jpg" alt="Foto de cortina romana">
+                        <div class="card_texts">
+                            <h1 class="card_title">Cortina Voil</h1>
+                            <p class="card_text">Leveza e transparência que valorizam a luz natural com um toque de requinte.</p>
+                        </div>
+                    </div>
+
+                    <!--Card 4-->
+                    <div class="card card3">
+                        <img class="card_img" src="assets/horizontal2-card.jpg" alt="Foto de cortina romana">
+                        <div class="card_texts">
+                            <h1 class="card_title">Persiana Horizontal</h1>
+                            <p class="card_text">Linhas modernas e versatilidade que unem controle de luz e estilo atemporal.</p>
+                        </div>
+                    </div>
+
+                    <!--Card 5-->
+                    <div class="card card3">
+                        <img class="card_img" src="assets/vertical-card.jpg" alt="Foto de cortina romana">
+                        <div class="card_texts">
+                            <h1 class="card_title">Persiana Vertical</h1>
+                            <p class="card_text">Leveza e transparência que valorizam a luz natural com um toque de requinte.</p>
+                        </div>
+                    </div>
+
+                    <!--Card 6-->
+                    <div class="card card3">
+                        <img class="card_img" src="assets/doublevision-card.jpg" alt="Foto de cortina romana">
+                        <div class="card_texts">
+                            <h1 class="card_title">Double Vision</h1>
+                            <p class="card_text">Design inovador com sobreposição de faixas que combina privacidade, modernidade e sofisticação.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Serviços-->
+            <section class="servicos">
+
+                <div class="servicos_title">
+                    <h1>Nossos Serviços</h1>
+                    <div class="title_detail"></div>
+                </div>
+
+                <!-- Cards -->
+                 <div class="cards_servicos">
+
+                    <!-- Card 1 -->
+                     <div class="card_servico">
+                        <div class="card_servico_icon_title">
+                            <img src="assets/icone-card-orçamento.png" alt="Ícone de orçamento">
+                            <h1 class="card_servico_title">Venda sob medida</h1>
+                        </div>
+                        <div class="card_servico_detail"></div>
+                        <p class="card_servico_text">Orçamento rápido e sem compromisso! Deixe seu ambiente mais aconchegante com quem entende do assunto.</p>
+                     </div>
+
+                    <!-- Card 2 -->
+                     <div class="card_servico">
+                        <div class="card_servico_icon_title">
+                            <img src="assets/icone-manutencao.png" alt="Ícone de orçamento">
+                            <h1 class="card_servico_title">Reparo e Manutenção</h1>
+                        </div>
+                        <div class="card_servico_detail"></div>
+                        <p class="card_servico_text">Assistência especializada que reforma e revitaliza suas persianas e cortinas.</p>
+                     </div>
+
+                    <!-- Card 3 -->
+                     <div class="card_servico">
+                        <div class="card_servico_icon_title">
+                            <img src="assets/icone-conserto.png" alt="Ícone de orçamento">
+                            <h1 class="card_servico_title">Consertos</h1>
+                        </div>
+                        <div class="card_servico_detail"></div>
+                        <p class="card_servico_text">Orçamento rápido e sem compromisso! Deixe seu ambiente mais aconchegante com quem entende do assunto.</p>
+                     </div>
+
+                    <!-- Card 4 -->
+                     <div class="card_servico">
+                        <div class="card_servico_icon_title">
+                            <img src="assets/icone-mosca.png" alt="Ícone de orçamento">
+                            <h1 class="card_servico_title">Tela Mosquiteira</h1>
+                        </div>
+                        <div class="card_servico_detail"></div>
+                        <p class="card_servico_text" style="margin-top: 20px;">Conserto e fabricação de telas mosquiteiras.</p>
+                     </div>
+
+                 </div>
+
+            </section>
+
+
+
+
+
+
+        </main>
+
+
+
 </body>
 </html>
