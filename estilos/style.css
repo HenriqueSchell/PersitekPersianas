@@ -7,6 +7,7 @@
     --cinzaBg: #1C1C1C;
     --branco: #FFFFFF;
     --bordo: #800020;
+    --bordoEscuro: #4b0013;
     --cinzaBtn: #595656;
     --cinzaCorpo: #252526;
     --cinzaTextos: #D0D0D0;
@@ -118,12 +119,12 @@ body{
     cursor: pointer;
     font-family: var(--titles);
     font-weight: 600;
+    transition: 0.5s ease-in-out;
 }
 
 .nav_btn:hover{
     background-color: #4b0013;
     transform: scale(1.05);
-    transition: 0.5s ease-in-out;
 }
 
 .hero{
@@ -171,12 +172,12 @@ body{
     font-weight: 600;
     cursor: pointer;
     font-size: 20px;
+    transition: 0.5s ease-in-out;
 }
 
 .hero .hero_btn_orcamento:hover{
     background-color: #4b0013;
     transform: scale(1.05);
-    transition: 0.5s ease-in-out;
 }
 
 .hero .hero_btn_mostruario{
@@ -189,12 +190,12 @@ body{
     margin-right: 50px;
     cursor: pointer;
     font-size: 20px;
+    transition: 0.5s ease-in-out;
 }
 
 .hero .hero_btn_mostruario:hover{
     background-color: var(--cinzaCorpo);
     transform: scale(1.05);
-    transition: 0.5s ease-in-out;
 }
 
 @keyframes fadeinup{
@@ -444,8 +445,10 @@ main{
 
 .contato_main_content{
     display: grid;
-    grid-template-columns: 350px, 200px;
+    grid-template-columns: 350px 450px;
+    gap: 100px;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .contato_form{
@@ -461,12 +464,169 @@ main{
     font-size: 18px;
     padding-left: 20px;
     border-radius: 10px;
-    border: 2px solid var(--cinzaBg);
+    border: 2px solid var(--cinzaBtn);
+    color: var(--branco)
+}
+
+.input:focus{
+    outline: none;
+    border: 2px solid var(--bordo);
 }
 
 .button_contato{
     background-color: var(--bordo);
     color: var(--branco);
     border: none;
-    
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
+
+.button_contato:hover{
+    transform: scale(1.05);
+    background-color: var(--bordoEscuro);
+    border: none;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.telefone{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: var(--cinzaTextos);
+}
+
+.telefone p{
+    font-size: 22px;
+
+}
+.email{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.email p{
+    font-size: 22px;
+
+}
+
+.email a{
+    text-decoration: none;
+    color: var(--cinzaTextos);
+}
+
+.clock{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: var(--cinzaTextos);
+}
+
+.clock p{
+    font-size: 22px;
+
+}
+
+.sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sociais p{
+    font-size: 22px;
+    color: var(--cinzaTextos);
+    text-align: center;
+}
+
+.sociais .icons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons a:hover{
+    transform: scale(1.15);
+    transition: 0.5s ease-in-out;
+    border: none;
+}
+
+.rodape{
+    max-width: 1246px;
+    height: 140px;
+    background-color: var(--bordo);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer_list{
+    list-style: none;
+    font-family: var(--titles);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.rodape img{
+    margin-left: 100px;
+}
+
+.footer_list{
+    display: flex;
+    gap: 10px;
+}
+
+.item-footer{
+    position: relative;
+}
+
+.links_footer::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--cinzaBg);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.links_footer:hover::after{
+    width: 100%;
+}
+
+.item-footer .links_footer{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 18px;
+}
+
+.footer-btn{
+    margin-right: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    border:none;
+    font-size: 20px;
+    color: var(--branco);
+    background-color: var(--cinzaBg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer
+}
+
+.footer-btn:hover{
+    transform: scale(1.1);   
+    background-color: var(--cinzaBtn);
+}
+
+
+
