@@ -316,13 +316,12 @@ main{
     max-width: 1126px;
     margin-top: 70px;
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, auto);
     gap: 70px;
 }
 
 .card_servico{
-    max-width: 500px;
-    height: 200px;
+    flex-basis: 300px;
     background-color: var(--cinzaCorpo);
     display: flex;
     flex-direction: column;
@@ -342,7 +341,7 @@ main{
 }
 
 .card_servico_detail{
-    width: 500px;
+    width: 100%;
     height: 2px;
     background-color: var(--branco);
     margin-top: 20px;
@@ -408,6 +407,7 @@ main{
     margin-left: 65px;
     margin-top: 70px;
     gap: 50px;
+    margin-right: 20px;
 }
 
 .sobre_text_icon{
@@ -420,7 +420,7 @@ main{
 }
 
 .sobre_texts_container .img{
-    width: 500px;
+    width: 100%;
     height: 300px;
     border-radius: 15px;
 }
@@ -510,6 +510,7 @@ main{
     font-size: 22px;
 
 }
+
 .email{
     display: flex;
     gap: 20px;
