@@ -728,6 +728,9 @@ main{
     .sobre_texts_container{
         margin: 30px;
     }
+    .title_detail{
+        width: 100%;
+    }
     .contato{
         width: 100vw;
     }
