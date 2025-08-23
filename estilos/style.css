@@ -683,10 +683,10 @@ main{
 
 @media screen and (max-width: 768px){
     body{
-        width: 100vw;
+        width: 100%;
     }
     main{
-        width: 100vw;
+        width: 100%;
     }
     .navbar{
         margin: 0;
