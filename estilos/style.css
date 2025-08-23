@@ -413,7 +413,7 @@ main{
 
 .sobre_title_detail{
     height: 2px;
-    width: 600px;
+    width: 100vw;
     background-color: var(--branco);
     margin-top: 10px;
 }
@@ -715,6 +715,11 @@ main{
     .hero_btn_mostruario{
         width: 100%;
     }
+    .cards{
+        width: 100vw;
+        grid-template-columns: auto;
+        margin: 70px 20px;
+    }
     .card_servico_text{
         padding: 0;
         font-size: 18px;
@@ -722,6 +727,12 @@ main{
     }
     .sobre_texts_container{
         margin: 30px;
+    }
+    .contato{
+        width: 100vw;
+    }
+    .feixa_title{
+        width: 100vw;
     }
     .contato_form{
         margin: auto;
