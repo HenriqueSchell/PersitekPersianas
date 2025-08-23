@@ -73,6 +73,10 @@ body{
     height: 100px;
 }
 
+.nav_logo_mobile{
+    display: none;
+}
+
 .nav_list{
     list-style: none;
     display: flex;
@@ -162,7 +166,6 @@ body{
 
 .hero_buttons{
     display: flex;
-    flex-direction: row;
     gap: 50px;
 }
 
@@ -252,7 +255,7 @@ main{
     align-items: center;
     background-color: var(--bordo);
     width: 350px;
-    padding: 30px;
+    padding: 15px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
@@ -269,17 +272,25 @@ main{
     padding-bottom: 10px;
 }
 
+.card_mostruario_detail{
+    width: 100%;
+    height: 2px;
+    background-color: var(--branco);
+    margin-top: 20px;
+}
+
 .card_texts{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .card_title{
     font-family: var(--titles);
     font-weight: 400;
-    font-size: 32px;
+    font-size: 22px;
 }
 
 .card_text{
@@ -438,6 +449,7 @@ main{
 .contato{
     max-width: 1246px;
     background-color: var(--cinzaCorpo);
+    padding-bottom: 30px;
 }
 
 .feixa_title{
@@ -506,6 +518,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -593,7 +606,7 @@ main{
     justify-content: space-between;
 }
 
-.rodape img{
+.rodape .logo_footer_desktop{
     margin-left: 100px;
 }
 
@@ -644,6 +657,11 @@ main{
     background-color: var(--cinzaBtn);
 }
 
+.logo_footer_mobile{
+    display: none;
+    margin: 0 auto;
+}
+
 
 @media screen and (max-width: 900px) {
     .nav_btn{
@@ -660,6 +678,72 @@ main{
     }
 .sobre_texts_container{
         grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+        max-width: none;
+    }
+    .nav_logo{
+        display: none;
+    }
+    .nav_logo_mobile{
+        display: flex;
+        padding-left: 10px;
+    }
+    .nav_list{
+        display: none;
+    }
+    .menu_hamburguer{
+        display: flex;
+    }
+    .hero{
+        max-width: none;
+        margin: 10%;
+    }
+    .hero h1{
+        font-size: 28px;
+        width: 80%;
+    }
+    .hero_buttons{
+        flex-direction: column;
+    }
+    .hero_btn_mostruario{
+        width: 100%;
+    }
+    .card_servico_text{
+        padding: 0;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .sobre_texts_container{
+        margin: 30px;
+    }
+    .contato_form{
+        margin: auto;
+    }
+    .info{
+        align-items: start;
+        margin-left: 10%;
+    }
+    .email p{
+    font-size: 16px;
+    }
+    .clock p{
+        font-size: 16px;
+    }
+    .footer-btn{
+        display: none;
+    }
+    .logo_footer_desktop{
+        display: none;
+    }
+    .logo_footer_mobile{
+        display: flex;
     }
 }
 
