@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Style para desktop-->
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="static/style.css">
 
 
     <!--Fontes-->
@@ -20,12 +20,32 @@
     <title>Persitek Persianas</title>
 </head>
 <body>
+
+    <nav class="navbar_mobile">
+                    <img src="assets/logo-mobile.png" alt="Logo Persitek Persianas">
+                    <ul class="navbar_mobile_list">
+                        <li class="item_mobile"><a href="#">Início</a></li>
+                        <li class="item_mobile"><a href="#mostruario">Mostruário</a></li>
+                        <li class="item_mobile"><a href="#servicos">Serviços</a></li>
+                        <li class="item_mobile"><a href="#sobre">Sobre</a></li>
+                        <li class="item_mobile"><a href="#contato">Contato</a></li>
+                    </ul>
+
+                    <div class="mobile_detail"></div>
+
+                    <div class="icons_mobile">
+                        <a class="icon_mobile" href="https://instagram.com/persianas_persitek" target="_blank"><img src="assets/icone-instagram.png" alt="Icone do Instagram"></a>
+                        <a class="icon_mobile" href="https://wa.me/5551997326768?text=Olá+vim+pelo+site+e+gostaria+de+um+atendimento!" target="_blank"><img src="assets/icone-whatsapp.png" alt="Icone do WhatsApp"></a>
+                    </div>
+                </nav>
+
     
     <!--Header-->
         <header class="header">
             <div class="overlay"></div>
 
             <nav class="navbar fadein">
+                <!--Navbar desktop-->
                 <img class="nav_logo" src="assets/logo-header.png" alt="Logo Persitek">
                 <img class="nav_logo_mobile" src="assets/logo-mobile.png" alt="Logo Persitek">
                 <ul class="nav_list">
@@ -35,8 +55,18 @@
                     <li class="item"><a href="#sobre">Sobre</a></li>
                     <li class="item"><a href="#contato">Contato</a></li>
                 </ul>
-                <img class="menu_hamburguer" src="assets/menu-icon.png" alt="Menu hamburguer icon">
+
                 <a href="https://wa.me/5551997326768?text=Olá,+vim+pelo+site+e+gostaria+de+um+atendimento!" target="_blank"><button class="nav_btn">Solicite seu orçamento</button></a>
+
+                
+
+                <div class="btn_hamburguer" id="btn_hamburguer">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </div>
+
+
             </nav>
 
             <section class="hero fadein">
@@ -317,5 +347,7 @@
             </nav>
             <a href="https://wa.me/5551997326768?text=Olá,+vim+pelo+site+e+gostaria+de+um+atendimento!" target="_blank"><input type="button" value="Chame no WhatsApp" class="footer-btn"></a>
         </footer>
+
+        <script src="static/script.js"></script>
 </body>
 </html>
