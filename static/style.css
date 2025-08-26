@@ -130,9 +130,6 @@ body{
     transform: scale(1.05);
 }
 
-#btn_hamburguer{
-    display: none;
-}
 
 .btn_hamburguer{
         width: 50px;
@@ -176,8 +173,11 @@ body{
         background-color: red;
     }
 
-.navbar_mobile{
+#navMobile{
     display: none;
+}
+
+.navbar_mobile{
     background-color: var(--cinzaCorpo);
     position: fixed;
     flex-direction: column;
@@ -186,6 +186,10 @@ body{
     height: 100vh;
     z-index: 3;
     padding: 30px 10px;
+}
+
+.navbar_mobile.ativo{
+    display: flex;
 }
 
 .navbar_mobile_list{
@@ -215,6 +219,10 @@ body{
 .icons_mobile{
     display: flex;
     justify-content: space-around;
+}
+
+.icon_mobile{
+    transition: 0.5s ease-in-out;
 }
 
 .icon_mobile:hover{
