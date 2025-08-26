@@ -130,8 +130,13 @@ body{
     transform: scale(1.05);
 }
 
+#btn_hamburguer{
+    display: none;
+}
+
 
 .btn_hamburguer{
+        display: none;
         width: 50px;
         height: 50px;
         border: 2px solid var(--branco);
@@ -143,7 +148,7 @@ body{
         align-items: center;
         justify-content: center;
         gap: 6px;
-        transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
 .linha{
     display: block;
@@ -152,7 +157,7 @@ body{
     background-color: var(--branco);
     position: relative;
     transform-origin: center;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
     }
 
 .btn_hamburguer.ativar{
@@ -804,6 +809,9 @@ main{
         display: none;
     }
     #btn_hamburguer{
+        display: flex;
+    }
+    .btn_hamburguer{
         display: flex;
     }
     .hero{
