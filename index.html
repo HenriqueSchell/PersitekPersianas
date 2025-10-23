@@ -22,7 +22,14 @@
 <body>
 
     <nav id="navMobile" class="navbar_mobile fadein">
-                    <img src="assets/logo-mobile.png" alt="Logo Persitek Persianas">
+                    <div id="btnNavbarMobile" class="nav_mobile_img_logo">
+                        <img class="img_navMobile" src="assets/logo-mobile.png" alt="Logo Persitek Persianas">
+
+                         <div class="btn_hamburguer_mobile">
+                            <div class="linha_nav_mobile">X</div>
+                        </div>
+                    </div>
+
                     <ul class="navbar_mobile_list">
                         <li class="item_mobile"><a href="#">Início</a></li>
                         <li class="item_mobile"><a href="#mostruario">Mostruário</a></li>
@@ -95,14 +102,32 @@
                 <!--Cards-->
                 <div class="cards">
                     <!--Card 1-->
-                    <div class="card card1">
+                    <div id="card1" class="card card1">
                         <img class="card_img" src="assets/romana-card.jpg" alt="Foto de cortina romana">
                         <div class="card_mostruario_detail"></div>
                         <div class="card_texts">
                             <h1 class="card_title">Cortina Romana</h1>
                             <p class="card_text">Dobras suaves que transformam qualquer ambiente em um espaço sofisticado e acolhedor.</p>
                         </div>
+
+                        
                     </div>
+                    
+                    <div id="card_view">
+                        <div class="content_modal">
+                            <div class="images">
+                                <img class="main_image" src="assets/romana-card.jpg" alt="imagem romana 1">
+                                <!-- <img class="secondary_image" src="assets/romana-picture1.jpg" alt="imagem romana 2"> -->
+                            </div>
+                            <div class="infos_modal">
+                                <h1>Cortina Romana</h1>
+                                <h2>Tecidos</h2>
+                                <h2>Metragem máxima</h2>
+                                <p>1.80 metros</p>
+                            </div>
+                        </div>
+                    </div>
+                    
 
                     <!--Card 2-->
                     <div class="card card2">
